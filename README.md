@@ -11,6 +11,7 @@
 A comprehensive collection of resources, frameworks, standards, regulations, and tools related to AI safety and governance. This repository also includes a [list of AI safety conferences](CONFERENCES.md) for networking and a [global map of AI regulations](AILAW.md) to track the evolving legal landscape.
 
 ## Table of Contents
+- [Understanding AI Safety, Security, Assurance and Governance](#understanding-ai-safety-security-assurance-and-governance)
 - [ISO Standards for AI Safety](#iso-standards-for-ai-safety)
 - [AI Safety Tools](#ai-safety-tools)
   - [Open Source Tools](#open-source-tools)
@@ -27,6 +28,78 @@ A comprehensive collection of resources, frameworks, standards, regulations, and
 - [Timeline of Standards and Regulations](#timeline-of-standards-and-regulations)
 - [AI Safety Conferences](CONFERENCES.md)
 - [Global AI Regulations and Legal Framework](AILAW.md)
+
+## Understanding AI Safety, Security, Assurance and Governance
+
+### AI Safety vs AI Security
+
+While interconnected, AI Safety and AI Security focus on different aspects of AI system trustworthiness:
+
+#### AI Safety
+- **Primary Focus**: Preventing unintended harm from AI system behavior and outputs
+- **Key Objectives**: 
+  - Alignment with human values and ethical principles
+  - System reliability and robustness
+  - Prevention of unintended consequences
+- **Risk Areas**: 
+  - Algorithmic bias
+  - Lack of transparency
+  - Societal impact
+  - Value misalignment
+
+#### AI Security
+- **Primary Focus**: Protecting AI systems from malicious threats
+- **Key Objectives**: 
+  - Confidentiality of AI systems and data
+  - Integrity of models and outputs
+  - Availability of AI services
+- **Risk Areas**:
+  - Data breaches
+  - Model theft
+  - Adversarial attacks
+  - Infrastructure vulnerabilities
+
+### AI Assurance
+
+AI Assurance is the process of providing confidence in AI system trustworthiness through:
+
+#### Key Components
+1. **Measurement**: Evaluating AI system properties and behavior
+2. **Evaluation**: Assessing against standards and requirements
+3. **Communication**: Transparent reporting to stakeholders
+
+#### Assurance Mechanisms
+- Technical testing and validation
+- Bias audits
+- Conformity assessments
+- Impact assessments
+- Risk assessments
+- Formal verification
+
+### AI Governance
+
+AI Governance provides the framework for ensuring responsible AI development and deployment:
+
+#### Core Elements
+1. **Policies and Standards**: Guidelines for AI development and use
+2. **Risk Management**: Identifying and mitigating AI-related risks
+3. **Accountability**: Clear roles and responsibilities
+4. **Monitoring**: Continuous oversight of AI systems
+
+#### Implementation Approach
+- Risk-based assessment
+- Cross-functional collaboration
+- Regular auditing and review
+- Stakeholder engagement
+- Continuous improvement
+
+The relationship between these four aspects is crucial:
+- **Safety** ensures AI systems behave as intended
+- **Security** protects against malicious threats
+- **Assurance** provides evidence of trustworthiness
+- **Governance** establishes the framework for responsible AI
+
+Effective AI risk management requires addressing all these aspects throughout the AI system lifecycle, from design and development to deployment and monitoring.
 
 ## ISO Standards for AI Safety
 
@@ -69,8 +142,10 @@ A comprehensive collection of resources, frameworks, standards, regulations, and
 | Foolbox | Neural Network Security | Framework for creating and evaluating adversarial examples that fool neural networks, supporting multiple ML frameworks | [GitHub](https://github.com/bethgelab/foolbox) |
 | Garak | LLM Security | Comprehensive LLM vulnerability scanner by NVIDIA that detects prompt injection, jailbreaking, data extraction, and other LLM-specific attacks | [GitHub](https://github.com/NVIDIA/garak) |
 | Mindgard | AI Application Security | End-to-end framework for testing and securing AI applications against prompt injection, data poisoning, and model extraction | [GitHub](https://github.com/mindgard) |
-| NOVA Framework | Security Assessment | Comprehensive framework for AI application security assessment that maps security controls to the AI lifecycle | [GitHub](https://github.com/fr0gger/nova-framework) |
+| NOVA Framework | Prompt Analysis | Open-source prompt pattern matching system combining keyword detection, semantic similarity, and LLM-based evaluation to analyze and detect prompt content | [GitHub](https://github.com/fr0gger/nova-framework) |
 | CSA AI Matrix | Security Controls | Cloud Security Alliance's comprehensive framework mapping security controls to AI risks across development and deployment stages | [GitHub](https://cloudsecurityalliance.org/artifacts/ai-security-framework) |
+| AI Verify | Testing Framework | World's first AI Governance Testing Framework aligned with international standards (EU, OECD, Singapore) for validating AI systems across transparency, explainability, fairness, and safety | [Website](https://aiverifyfoundation.sg/what-is-ai-verify/) |
+| Project Moonshot | LLM Testing | Open-source LLM Evaluation Toolkit for benchmarking, red teaming, and testing baselines to help manage LLM deployment risks | [GitHub](https://github.com/aiverify-foundation/moonshot) |
 
 ### Commercial Tools
 
