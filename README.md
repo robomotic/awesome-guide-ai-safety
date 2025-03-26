@@ -8,7 +8,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/robomotic/awesome-guide-ai-safety/pulls)
 [![Contributors](https://img.shields.io/github/contributors/robomotic/awesome-guide-ai-safety)](https://github.com/robomotic/awesome-guide-ai-safety/graphs/contributors)
 
-A comprehensive collection of resources, frameworks, standards, regulations, and tools related to AI safety and governance.
+A comprehensive collection of resources, frameworks, standards, regulations, and tools related to AI safety and governance. This repository also includes a [list of AI safety conferences](CONFERENCES.md) for networking and staying up-to-date with the latest developments.
 
 ## Table of Contents
 - [ISO Standards for AI Safety](#iso-standards-for-ai-safety)
@@ -25,6 +25,7 @@ A comprehensive collection of resources, frameworks, standards, regulations, and
 - [Framework Relationships](#framework-relationships)
 - [Relationship to Other Regulations](#relationship-to-other-regulations)
 - [Timeline of Standards and Regulations](#timeline-of-standards-and-regulations)
+- [AI Safety Conferences](CONFERENCES.md)
 
 ## ISO Standards for AI Safety
 
@@ -517,6 +518,11 @@ timeline
         2025 : EU AI Act Initial Implementation Phase
         2027 : EU AI Act Full Implementation
 ```
+
+## Related Resources
+
+- [AI Safety Conferences](CONFERENCES.md) - A curated list of dedicated AI safety conferences and cybersecurity events with AI safety tracks
+- [Contributing Guidelines](CONTRIBUTING.md) - Information on how to contribute to this repository
 
 ## Contributing
 
