@@ -19,6 +19,7 @@ A comprehensive collection of resources, frameworks, standards, regulations, and
 - [AI Risk Frameworks](#ai-risk-frameworks)
 - [AI Regulations](#ai-regulations)
 - [OWASP Top 10 for LLM Applications](#owasp-top-10-for-llm-applications)
+- [MITRE ATLAS Framework](#mitre-atlas-framework)
 - [AI Incident Sources](#ai-incident-sources)
 - [National CERTs and Organizations Addressing AI Security](#national-certs-and-organizations-addressing-ai-security)
 - [Framework Relationships](#framework-relationships)
@@ -167,6 +168,194 @@ The OWASP Top 10 for LLM Applications provides a standardized awareness document
 4. **Implementation Guidance**: OWASP provides specific technical mitigations that complement the more process-oriented approaches in ISO standards.
 
 5. **Security by Design**: Integrating OWASP considerations during the early stages of AI system development aligns with ISO/IEC 42001's emphasis on proper governance throughout the AI lifecycle.
+
+## MITRE ATLAS Framework
+
+The MITRE Adversarial Threat Landscape for Artificial-Intelligence Systems (ATLAS) framework provides a comprehensive knowledge base for understanding and mitigating adversarial threats to AI systems. Modeled after the widely-used MITRE ATT&CK framework, ATLAS maps out tactics, techniques, and procedures (TTPs) specific to attacks against machine learning systems.
+
+### Core Components of MITRE ATLAS
+
+| Component | Description | Examples |
+|-----------|-------------|----------|
+| Tactics | High-level adversarial goals | Reconnaissance, ML Supply Chain Compromise, Model Evasion |
+| Techniques | Specific methods to achieve these goals | Data Poisoning, Model Inversion, Adversarial Examples |
+| Case Studies | Real-world examples of AI attacks | Documented incidents of ML system compromises |
+| Mitigations | Countermeasures to prevent or detect attacks | Adversarial Training, Input Validation, Model Monitoring |
+
+### ATLAS Tactics and Techniques
+
+| Tactic | Description | Key Techniques |
+|--------|-------------|---------------|
+| Reconnaissance | Gathering information about ML systems | ML Model Probing, ML Architecture Reconnaissance |
+| Resource Development | Establishing resources to support operations | Acquire ML Infrastructure, Develop ML Capabilities |
+| Initial Access | Gaining initial access to ML systems | Supply Chain Compromise, Social Engineering |
+| ML Supply Chain Compromise | Attacking the ML development pipeline | Data Poisoning, Algorithm Poisoning, Malicious ML Components |
+| ML Model Access | Accessing an ML model or its artifacts | Model Theft, Credential Access, API Abuse |
+| Execution | Running adversarial code or manipulating ML execution | Code Injection, Prompt Injection, Input Manipulation |
+| Collection | Gathering sensitive data from ML systems | Output Filtering, Model Inversion, Data Extraction |
+| Exfiltration | Stealing model artifacts or sensitive data | Unauthorized Data Transfer, Model Extraction |
+| Impact | Directly affecting ML availability, integrity, or confidentiality | DoS Attack, Model Corruption, Output Manipulation |
+| Model Evasion | Bypassing ML detection systems | Adversarial Examples, Input Filtering Evasion, Feature Manipulation |
+| Inference | Extracting information about the model or training data | Membership Inference, Property Inference, Training Data Extraction |
+
+### Mapping MITRE ATLAS to ISO Standards and Risk Frameworks
+
+| ATLAS Component | ISO/IEC Standards | AI Risk Frameworks | Implementation Considerations |
+|-----------------|-------------------|-------------------|------------------------------|
+| Reconnaissance Defense | ISO/IEC 27001 (Information Security), ISO/IEC 42001 (AI Management) | NIST AI RMF (Govern 2.3, Map 1.1) | Implement monitoring for ML system probing and reconnaissance |
+| ML Supply Chain Security | ISO/IEC 5338 (AI Lifecycle), ISO/IEC 42001, ISO/IEC 27001 | NIST AI RMF (Map 2.3, Map A/B/C), ISACA AI Controls Matrix | Secure the entire ML development pipeline and verify data integrity |
+| Model Access Controls | ISO/IEC 27001, ISO/IEC 24028 (AI Trustworthiness) | NIST AI RMF (Govern 3.2, Manage 1.4), Microsoft Responsible AI | Implement strict authentication, authorization, and auditing for model access |
+| Adversarial Example Defense | ISO/IEC TR 24029 (AI Robustness), ISO/IEC 5469 (AI Functional Safety) | NIST AI RMF (Measure 1.1, Measure 1.4), Google AI Principles | Deploy adversarial training and input validation techniques |
+| Model Evasion Prevention | ISO/IEC TR 24029, ISO/IEC 42001 | NIST AI RMF (Measure 2.2, Manage 1.2), Accenture Responsible AI Maturity | Implement detection mechanisms for adversarial inputs and model robustness testing |
+| Inference Attack Mitigation | ISO/IEC 27001, ISO/IEC 29134 (Privacy) | NIST AI RMF (Measure 3.2, Manage 2.4), IBM AI Fairness 360 | Apply differential privacy and minimize unnecessary information disclosure |
+
+### Benefits of Integrating MITRE ATLAS with Other Standards
+
+1. **Comprehensive Threat Coverage**: ATLAS provides specific technical details about AI threats that complement the broader governance focus of ISO standards and risk frameworks.
+
+2. **Security Testing Guidance**: ATLAS offers concrete examples and case studies that can be used to develop effective security testing methodologies aligned with ISO/IEC TR 24029 (Robustness assessment of neural networks).
+
+3. **Defense-in-Depth Strategy**: Combining ATLAS with OWASP GenAI Top 10 creates a multi-layered defense approach, with ATLAS focusing on adversarial ML attacks and OWASP covering broader LLM application security.
+
+4. **Supply Chain Security**: ATLAS's ML Supply Chain Compromise tactic aligns with ISO/IEC 5338 (AI system life cycle processes) to secure the entire AI development lifecycle.
+
+5. **Risk Assessment Enhancement**: ATLAS case studies provide real-world examples to inform risk assessments required by ISO/IEC 23894 (AI Risk Management) and NIST AI RMF.
+
+6. **Regulatory Compliance Support**: The detailed controls derived from ATLAS tactics help organizations meet the technical requirements of regulations like the EU AI Act, particularly for high-risk AI systems.
+
+### Implementation Approach
+
+Organizations can implement a unified security approach by mapping ATLAS tactics to their existing ISO-based management systems and risk frameworks:
+
+1. Incorporate ATLAS threats into ISO/IEC 42001 risk assessments
+2. Develop security controls based on ATLAS mitigations that satisfy ISO/IEC 27001 requirements
+3. Use ATLAS case studies to inform threat modeling exercises required by NIST AI RMF
+4. Align ATLAS defensive measures with EU AI Act technical documentation requirements
+5. Implement continuous monitoring for ATLAS tactics using metrics defined in ISO/IEC 5338
+
+### MITRE ATLAS and OWASP Relationships Diagram
+
+```mermaid
+graph TB
+    classDef governance fill:#d4f1f9,stroke:#05a,stroke-width:1px
+    classDef security fill:#ffe6cc,stroke:#d79b00,stroke-width:1px
+    classDef regulation fill:#d5e8d4,stroke:#82b366,stroke-width:1px
+    classDef relationship fill:none,stroke:#999,stroke-width:1px,stroke-dasharray: 5 5
+    
+    %% Main Nodes
+    ATLAS[MITRE ATLAS]:::security
+    OWASP[OWASP GenAI Top 10]:::security
+    NIST[NIST AI RMF]:::governance
+    ISO42001[ISO/IEC 42001]:::governance
+    EUAI[EU AI Act]:::regulation
+    
+    %% ATLAS components
+    ATLAS_RECON[Reconnaissance]:::security
+    ATLAS_SUPPLY[ML Supply Chain]:::security
+    ATLAS_EVASION[Model Evasion]:::security
+    ATLAS_IMPACT[Impact]:::security
+    
+    %% OWASP components
+    OWASP_PROMPT[LLM01: Prompt Injection]:::security
+    OWASP_OUTPUT[LLM02: Insecure Output]:::security
+    OWASP_POISON[LLM03: Training Data Poisoning]:::security
+    OWASP_DOS[LLM04: Model DoS]:::security
+    
+    %% Framework components
+    NIST_GOV[Govern]:::governance
+    NIST_MAP[Map]:::governance
+    NIST_MEASURE[Measure]:::governance
+    NIST_MANAGE[Manage]:::governance
+    
+    ISO_RISK[Risk Management]:::governance
+    ISO_LIFECYCLE[AI Lifecycle]:::governance
+    
+    EU_HIGHRISK[High-Risk Requirements]:::regulation
+    EU_GENPURPOSE[General Purpose AI]:::regulation
+    
+    %% Main relationships
+    ATLAS --> NIST
+    OWASP --> NIST
+    ATLAS --> ISO42001
+    OWASP --> ISO42001
+    ATLAS --> EUAI
+    OWASP --> EUAI
+    
+    %% ATLAS breakdown
+    ATLAS --> ATLAS_RECON
+    ATLAS --> ATLAS_SUPPLY
+    ATLAS --> ATLAS_EVASION
+    ATLAS --> ATLAS_IMPACT
+    
+    %% OWASP breakdown
+    OWASP --> OWASP_PROMPT
+    OWASP --> OWASP_OUTPUT
+    OWASP --> OWASP_POISON
+    OWASP --> OWASP_DOS
+    
+    %% NIST breakdown
+    NIST --> NIST_GOV
+    NIST --> NIST_MAP
+    NIST --> NIST_MEASURE
+    NIST --> NIST_MANAGE
+    
+    %% ISO breakdown
+    ISO42001 --> ISO_RISK
+    ISO42001 --> ISO_LIFECYCLE
+    
+    %% EU AI Act breakdown
+    EUAI --> EU_HIGHRISK
+    EUAI --> EU_GENPURPOSE
+    
+    %% Cross-framework relationships
+    ATLAS_SUPPLY -.->|Aligns with| OWASP_POISON
+    ATLAS_IMPACT -.->|Relates to| OWASP_DOS
+    ATLAS_EVASION -.->|Complements| OWASP_PROMPT
+    
+    ATLAS_RECON -.->|Informs| NIST_MAP
+    ATLAS_SUPPLY -.->|Supports| NIST_GOVERN
+    OWASP_PROMPT -.->|Addresses| NIST_MANAGE
+    OWASP_OUTPUT -.->|Measured by| NIST_MEASURE
+    
+    ATLAS_SUPPLY -.->|Required by| ISO_LIFECYCLE
+    OWASP_POISON -.->|Managed in| ISO_RISK
+    
+    ATLAS_EVASION -.->|Compliance for| EU_HIGHRISK
+    OWASP_OUTPUT -.->|Required for| EU_GENPURPOSE
+    
+    %% Labels
+    subgraph SecurityFrameworks ["Security Frameworks"]
+        ATLAS
+        OWASP
+    end
+    
+    subgraph GovernanceStandards ["Governance Standards"]
+        NIST
+        ISO42001
+    end
+    
+    subgraph Regulations ["Regulations"]
+        EUAI
+    end
+```
+
+The diagram above illustrates how MITRE ATLAS and OWASP GenAI Top 10 security frameworks integrate with key governance standards (NIST AI RMF and ISO/IEC 42001) and regulations (EU AI Act). It highlights specific relationships between components:
+
+1. **Security Framework Components**:
+   - ATLAS tactics (Reconnaissance, ML Supply Chain, Model Evasion, Impact)
+   - OWASP Top 10 risks (Prompt Injection, Insecure Output, Training Data Poisoning, Model DoS)
+
+2. **Key Relationships**:
+   - ATLAS ML Supply Chain components align with OWASP Training Data Poisoning, both addressing data integrity
+   - ATLAS Model Evasion techniques complement OWASP Prompt Injection defenses
+   - Both frameworks support NIST AI RMF's Govern, Map, Measure, and Manage functions
+   - Security controls derived from both frameworks help satisfy ISO/IEC 42001 Risk Management requirements
+   - Compliance with EU AI Act high-risk and general-purpose AI provisions is enabled by implementing mitigations from both frameworks
+
+3. **Integration Benefits**:
+   - Comprehensive coverage: ATLAS focuses on adversarial ML while OWASP addresses LLM-specific vulnerabilities
+   - Complementary approaches: Technical security controls (ATLAS/OWASP) support governance requirements (ISO/NIST)
+   - Regulatory alignment: Security framework implementation facilitates compliance with EU AI Act requirements
 
 ## AI Incident Sources
 
