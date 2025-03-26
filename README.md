@@ -8,7 +8,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/robomotic/awesome-guide-ai-safety/pulls)
 [![Contributors](https://img.shields.io/github/contributors/robomotic/awesome-guide-ai-safety)](https://github.com/robomotic/awesome-guide-ai-safety/graphs/contributors)
 
-A comprehensive collection of resources, frameworks, standards, regulations, and tools related to AI safety and governance. This repository also includes a [list of AI safety conferences](CONFERENCES.md) for networking and staying up-to-date with the latest developments.
+A comprehensive collection of resources, frameworks, standards, regulations, and tools related to AI safety and governance. This repository also includes a [list of AI safety conferences](CONFERENCES.md) for networking and a [global map of AI regulations](AILAW.md) to track the evolving legal landscape.
 
 ## Table of Contents
 - [ISO Standards for AI Safety](#iso-standards-for-ai-safety)
@@ -26,6 +26,7 @@ A comprehensive collection of resources, frameworks, standards, regulations, and
 - [Relationship to Other Regulations](#relationship-to-other-regulations)
 - [Timeline of Standards and Regulations](#timeline-of-standards-and-regulations)
 - [AI Safety Conferences](CONFERENCES.md)
+- [Global AI Regulations and Legal Framework](AILAW.md)
 
 ## ISO Standards for AI Safety
 
@@ -522,6 +523,7 @@ timeline
 ## Related Resources
 
 - [AI Safety Conferences](CONFERENCES.md) - A curated list of dedicated AI safety conferences and cybersecurity events with AI safety tracks
+- [Global AI Regulations and Legal Framework](AILAW.md) - A comprehensive map of AI regulations and legislation worldwide with focus on safety implications
 - [Contributing Guidelines](CONTRIBUTING.md) - Information on how to contribute to this repository
 
 ## Contributing
