@@ -153,7 +153,24 @@ Effective AI risk management requires addressing all these aspects throughout th
 |------|----------|-------------|------|
 | IBM Watson OpenScale | Fairness/Monitoring | AI bias detection and fairness monitoring | [IBM](https://www.ibm.com/products/watson-openscale) |
 | Microsoft Azure Responsible AI | Comprehensive | Suite of tools for responsible AI | [Microsoft](https://azure.microsoft.com/en-us/solutions/responsible-ai/) |
-| Google Cloud AI | Comprehensive | AI platform with responsible AI features | [Google](https://cloud.google.com/ai) |
+| Google Cloud AI | Comprehensive | AI platform with responsible AI features | [Google](https://cloud.google.com/vertex-ai) |
+
+### Assessment Templates and Frameworks
+
+| Template/Framework | Organization | Description | Link |
+|-------------------|--------------|-------------|------|
+| Responsible AI Impact Assessment Template | Microsoft | A multi-year effort to define a process for assessing the impact an AI system may have on people, organizations, and society | [Microsoft](https://learn.microsoft.com/en-us/ai/rai/compliance/responsible-ai-impact-assessment-template) |
+| SAIF Risk Assessment Tool | Google | A questionnaire-based tool that generates an instant and tailored checklist to guide practitioners to secure their AI systems | [Google](https://cloudsecurityalliance.org/artifacts/saif-risk-assessment-tool/) |
+| AI Assessment Framework | Digital NSW | Framework to guide NSW Government agencies through the ethical development, deployment and use of AI technologies | [Digital NSW](https://www.digital.nsw.gov.au/policy/artificial-intelligence/ai-assurance-framework) |
+| Foundational AI Risk Assessment (FAIRA) | QLD Government | A transparency, accountability, and risk identification tool for Queensland Government agencies evaluating AI solutions | [QLD Government](https://www.qgcio.qld.gov.au/connecting-queensland/digital-services-policy/foundational-ai-risk-assessment-faira) |
+| AI Risk Assessment Template for NIST AI RMF | TrustArc | A structured framework designed to systematically identify, evaluate, and mitigate potential risks associated with AI | [TrustArc](https://trustarc.com/solutions/ai-risk-assessment-template/) |
+| Algorithmic Impact Assessment Tool | Government of Canada | A questionnaire designed to help assess and mitigate the impacts associated with deploying an automated decision system | [Government of Canada](https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/algorithmic-impact-assessment.html) |
+| Generative AI Vendor Evaluation Tool | FSISAC | A tool designed to help organizations assess and select generative AI vendors while managing associated risks | [FSISAC](https://www.fsisac.com/assessingaiusecases) |
+
+### Additional Commercial Tools
+
+| Tool | Category | Description | Link |
+|------|----------|-------------|------|
 | Dataiku | ML Operations | Platform for data science and ML operations | [Dataiku](https://www.dataiku.com/) |
 | Arthur AI | Monitoring | ML model monitoring platform | [Arthur](https://www.arthur.ai/) |
 | Fiddler AI | Explainability/Monitoring | ML monitoring and explainability platform | [Fiddler](https://www.fiddler.ai/) |
