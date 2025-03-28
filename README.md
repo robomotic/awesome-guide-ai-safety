@@ -18,6 +18,7 @@ A comprehensive collection of resources, frameworks, standards, regulations, and
   - [AI Security Tools](#ai-security-tools)
   - [Commercial Tools](#commercial-tools)
 - [AI Risk Frameworks](#ai-risk-frameworks)
+- [Threat Modeling Frameworks](#threat-modeling-frameworks)
 - [AI Regulations](#ai-regulations)
 - [OWASP Top 10 for LLM Applications](#owasp-top-10-for-llm-applications)
 - [MITRE ATLAS Framework](#mitre-atlas-framework)
@@ -201,6 +202,31 @@ Effective AI risk management requires addressing all these aspects throughout th
 | AI Principles | Google | Principles and practices for responsible AI | 2018 |
 | AI Ethics Framework | Singapore PDPC | Guidelines for ethical use of AI | 2020 |
 | AI Fairness 360 | IBM | Toolkit and framework for fairness in AI | 2018 |
+
+## Threat Modeling Frameworks
+
+| Framework | Description | Suitability for AI Safety, Governance, and Trustworthiness |
+|-----------|-------------|-------------------------------------------------------|
+| STRIDE | Developed by Microsoft, categorizes threats into six types: Spoofing, Tampering, Repudiation, Information disclosure, Denial of service, and Elevation of privilege. | Moderately suitable for AI systems. While effective for technical security concerns, it doesn't inherently address AI-specific issues like algorithmic bias or ethical considerations. Can be adapted for AI by extending the categories. |
+| LINDDUN | Focuses on privacy concerns, categorizing threats as Linkability, Identifiability, Non-repudiation, Detectability, Disclosure of information, Unawareness, and Non-compliance. | Well-suited for addressing privacy concerns in AI systems. Particularly valuable for AI applications handling personal data, but needs extension to cover other AI-specific risks. |
+| DREAD | Risk assessment model evaluating threats based on Damage potential, Reproducibility, Exploitability, Affected users, and Discoverability. | Generally applicable but less comprehensive for AI-specific concerns. Helpful for prioritizing identified risks but should be combined with AI-specific threat categories. |
+| PASTA | Process for Attack Simulation and Threat Analysis - A risk-centric methodology integrating business objectives with technical requirements. | Good for enterprise AI deployments due to its business focus. Helps align AI risk management with business objectives, but requires additional AI-specific threat patterns. |
+| OCTAVE | Operationally Critical Threat, Asset, and Vulnerability Evaluation - A risk-based strategic assessment framework focusing on organizational risk management. | Well-suited for organizational AI governance due to its focus on strategic risk management. Particularly valuable for mapping organizational risk to AI applications. |
+| ATT&CK for ML | MITRE's extension of the ATT&CK framework specifically for machine learning systems, categorizing tactics and techniques for attacking ML systems. | Highly suitable for AI security, as it's specifically designed for ML systems. Focuses on technical attack vectors against ML models but less coverage of broader governance and ethical issues. |
+| FAIR | Factor Analysis of Information Risk - A quantitative model for information security and operational risk assessment. | Strong for quantifying AI risks and economic impact. Valuable for organizations needing to measure AI risk in financial terms but needs customization for AI-specific threats. |
+| AI-specific Threat Modeling | Microsoft's Failure Modes in Machine Learning - Framework specifically for ML systems, covering attacks, failures, and vulnerabilities specific to ML. | Highly suitable as it was designed specifically for ML systems. Covers both intentional attacks and unintentional failures specific to AI. |
+| NIST AI RMF | A comprehensive framework addressing the full lifecycle of AI risk management. | Excellent for AI governance and trustworthiness. The most comprehensive framework for addressing AI risks across technical, ethical, and governance dimensions. Strongly recommended for organizations seeking a holistic approach. |
+| RVST | AI Verify Foundation's Resilience, Vulnerability, Safety, and Trustworthiness - A systematic approach to identifying AI vulnerabilities and potential harms. | Excellent for AI safety and trustworthiness. Designed specifically to address AI-specific concerns including social impact, bias, and reliability. |
+
+### Framework Recommendations
+
+- **For AI Safety:** NIST AI RMF and AI Verify's RVST provide the most comprehensive coverage of safety concerns, including unintended consequences and alignment issues.
+
+- **For AI Governance:** OCTAVE and NIST AI RMF offer strong organizational governance approaches, helping connect AI risks to business processes and compliance requirements.
+
+- **For AI Trustworthiness:** NIST AI RMF and LINDDUN combine well to address both technical trustworthiness and privacy concerns that impact user trust.
+
+- **For a Combined Approach:** Organizations should consider using NIST AI RMF as a base framework, supplemented with ATT&CK for ML for technical security threats and LINDDUN for detailed privacy analysis.
 
 ## AI Regulations
 
