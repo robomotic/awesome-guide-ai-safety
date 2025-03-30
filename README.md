@@ -167,6 +167,7 @@ Effective AI risk management requires addressing all these aspects throughout th
 | AI Risk Assessment Template for NIST AI RMF | TrustArc | A structured framework designed to systematically identify, evaluate, and mitigate potential risks associated with AI | [TrustArc](https://trustarc.com/resource/ai-risk-assessment/) |
 | Algorithmic Impact Assessment Tool | Government of Canada | A questionnaire designed to help assess and mitigate the impacts associated with deploying an automated decision system | [Government of Canada](https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/algorithmic-impact-assessment.html) |
 | Generative AI Vendor Evaluation Tool | FSISAC | A tool designed to help organizations assess and select generative AI vendors while managing associated risks | [FSISAC](https://www.fsisac.com/hubfs/Knowledge/AI/FSISAC_GenerativeAI-VendorEvaluation&QualitativeRiskAssessment.pdf) |
+| AI Management Essentials Tool (AIME) | UK Department for Science, Innovation and Technology (DSIT) | A self-assessment questionnaire to help organizations assess and improve their AI governance and management processes, aligned with ISO/IEC 42001, NIST AI RMF, and EU AI Act | [AIME Tool](documents/The%20AIME%20tool.pdf) |
 
 ### Additional Commercial Tools
 
@@ -242,6 +243,15 @@ Effective AI risk management requires addressing all these aspects throughout th
 | Artificial Intelligence and Data Act (AIDA) | Canada | Proposed legislation for regulating AI | Proposed | - |
 | Algorithm Act | South Korea | Regulates algorithmic recommendation systems | Proposed | - |
 | AI Governance Framework | Singapore | Guidelines for responsible AI deployment | Released | 2019 |
+
+### AI Compliance Resources
+
+| Resource | Organization | Description | Publication Date |
+|----------|--------------|-------------|------------------|
+| Navigating AI Compliance, Part 1 | Institute of Science and Technology | Comprehensive guide on AI compliance frameworks and regulatory requirements | 2023 |
+| Navigating Risk Compliance, Part 2 | Institute of Science and Technology | Detailed analysis of AI risk assessment and compliance implementation strategies | 2023 |
+
+The [Institute of Science and Technology](https://istonline.org.uk/) has published valuable resources on AI compliance that provide organizations with practical guidance on navigating the complex landscape of AI regulations and risk management.
 
 ## OWASP Top 10 for LLM Applications
 
