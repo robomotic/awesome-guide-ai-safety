@@ -18,10 +18,12 @@ A comprehensive collection of resources, frameworks, standards, regulations, and
   - [AI Security Tools](#ai-security-tools)
   - [Commercial Tools](#commercial-tools)
 - [AI Risk Frameworks](#ai-risk-frameworks)
+- [SANS Institute Critical AI Security Guidelines](#sans-institute-critical-ai-security-guidelines)
 - [Threat Modeling Frameworks](#threat-modeling-frameworks)
 - [AI Regulations](#ai-regulations)
 - [OWASP Top 10 for LLM Applications](#owasp-top-10-for-llm-applications)
 - [MITRE ATLAS Framework](#mitre-atlas-framework)
+- [NIST Adversarial Machine Learning Taxonomy](#nist-adversarial-machine-learning-taxonomy)
 - [AI Incident Sources](#ai-incident-sources)
 - [National CERTs and Organizations Addressing AI Security](#national-certs-and-organizations-addressing-ai-security)
 - [Framework Relationships](#framework-relationships)
@@ -203,6 +205,57 @@ Effective AI risk management requires addressing all these aspects throughout th
 | AI Principles | Google | Principles and practices for responsible AI | 2018 |
 | AI Ethics Framework | Singapore PDPC | Guidelines for ethical use of AI | 2020 |
 | AI Fairness 360 | IBM | Toolkit and framework for fairness in AI | 2018 |
+
+## SANS Institute Critical AI Security Guidelines
+
+The SANS Institute has developed comprehensive security guidelines for AI implementations, focusing on six critical control categories. These guidelines provide actionable recommendations for organizations implementing AI systems, particularly generative AI.
+
+### Control Categories
+
+#### 1. Access Controls
+- **Protect Model Parameters**: Implement least privilege principles and strong access controls
+- **Secure Vector Databases**: Apply proper authentication and authorization for vector database access
+- **Encryption**: Use encryption for model files at rest and runtime obfuscation
+- **Trusted Execution Environments (TEEs)**: Consider using TEEs to reduce risk of unauthorized access
+
+#### 2. Data Protection
+- **Protect Training Data**: Implement controls to prevent data poisoning
+- **Manage Context Windows**: Control what data enters the context window
+- **Prevent Data Leakage**: Implement measures to prevent sensitive data exposure
+- **Secure Data Pipelines**: Protect the entire data pipeline from collection to inference
+
+#### 3. Deployment Strategies
+- **Secure API Endpoints**: Protect internal training and inference API endpoints
+- **Implement Rate Limiting**: Prevent denial-of-service attacks
+- **Secure Model Deployment**: Ensure secure deployment pipelines
+- **Consider Deployment Architecture**: Evaluate on-premises vs. cloud deployment security implications
+
+#### 4. Inference Security
+- **Input Validation**: Implement strict validation for all inputs
+- **Output Filtering**: Filter outputs to prevent sensitive information disclosure
+- **Prevent Prompt Injection**: Guard against prompt injection attacks
+- **Implement Multilayered Protection**: Don't rely solely on system prompts for security
+
+#### 5. Monitoring
+- **Track Inference Refusals**: Measure and track when inference is refused
+- **Log Prompts**: Log prompts and outputs for sensitive workloads
+- **Continuous Monitoring**: Implement monitoring for issues and misuse
+- **Protect Audit Logs**: Secure logs that may contain sensitive data
+
+#### 6. Governance, Risk, Compliance (GRC)
+- **Maintain AI Bill-of-Materials (AIBOM)**: Track AI supply chain components
+- **Use Model Registries**: Implement centralized repositories to track and manage ML models
+- **Regular Testing**: Test and tune LLM applications/models regularly
+- **Establish AI GRC Board**: Incorporate AI usage into existing GRC frameworks
+
+### Key Recommendations
+
+- **Multilayered Protection**: Don't rely solely on system prompts; implement multiple security layers
+- **Risk-Based Approach**: Use risk-based approaches when implementing AI
+- **Continuous Testing**: Regularly test AI systems for security vulnerabilities
+- **Regulatory Compliance**: Stay informed about evolving AI regulations
+
+These guidelines represent point-in-time security recommendations in a rapidly evolving field. Organizations should adapt these controls to their specific AI implementations and risk profiles.
 
 ## Threat Modeling Frameworks
 
@@ -486,6 +539,50 @@ The diagram above illustrates how MITRE ATLAS and OWASP GenAI Top 10 security fr
    - Comprehensive coverage: ATLAS focuses on adversarial ML while OWASP addresses LLM-specific vulnerabilities
    - Complementary approaches: Technical security controls (ATLAS/OWASP) support governance requirements (ISO/NIST)
    - Regulatory alignment: Security framework implementation facilitates compliance with EU AI Act requirements
+
+## NIST Adversarial Machine Learning Taxonomy
+
+The National Institute of Standards and Technology (NIST) has published a comprehensive taxonomy and terminology framework for adversarial machine learning (AML) that complements the MITRE ATLAS framework. This publication (NIST AI 100-2) provides a structured approach to understanding and addressing security threats to AI systems.
+
+### Key Components of NIST AI 100-2
+
+| Component | Description |
+|-----------|-------------|
+| Attack Classification | Hierarchical taxonomy of attacks categorized by stages of learning, attacker goals, capabilities, and knowledge |
+| Predictive AI Attacks | Structured taxonomy with unique identifiers (e.g., NISTAML.01 for Availability Violations) |
+| Generative AI Attacks | Specific taxonomy elements addressing unique vulnerabilities in generative AI systems |
+| Mitigation Strategies | Corresponding countermeasures for each attack category |
+
+### Predictive AI Attack Categories
+
+| Attack Category | ID | Description | Examples |
+|-----------------|-------|-------------|----------|
+| Availability Violations | NISTAML.01 | Attacks that degrade model performance or cause denial of service | Model poisoning, data poisoning, energy-latency attacks |
+| Integrity Violations | NISTAML.02 | Attacks that cause incorrect model behavior or outputs | Evasion attacks, backdoor poisoning, targeted poisoning |
+| Privacy Compromises | NISTAML.03 | Attacks that extract sensitive information | Model extraction, reconstruction, membership inference |
+| Supply Chain Attacks | NISTAML.05 | Attacks targeting the AI development pipeline | Model poisoning during development or distribution |
+
+### Generative AI Attack Categories
+
+The taxonomy also addresses unique vulnerabilities in generative AI systems, including:
+
+- Prompt injection attacks
+- Training data extraction
+- Jailbreaking techniques
+- Output manipulation
+
+### Integration with Security Frameworks
+
+The NIST taxonomy is designed to integrate with existing security frameworks and standards:
+
+- Complements the MITRE ATLAS framework with standardized terminology
+- Aligns with the NIST AI Risk Management Framework (AI RMF)
+- Provides a common language for security practitioners and AI developers
+- Establishes a foundation for future standards and practice guides
+
+This taxonomy serves as an essential resource for organizations seeking to implement comprehensive security measures for their AI systems, providing a structured approach to identifying, categorizing, and mitigating adversarial threats.
+
+*Source: [NIST AI 100-2e2025: Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations](https://csrc.nist.gov/pubs/ai/100/2/e2025/final) (March 2025)*
 
 ## AI Incident Sources
 
