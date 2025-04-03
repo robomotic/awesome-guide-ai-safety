@@ -96,6 +96,26 @@ AI Governance provides the framework for ensuring responsible AI development and
 - Stakeholder engagement
 - Continuous improvement
 
+### Google's Technical Approach to AGI Safety and Security
+
+Google DeepMind's approach to technical Artificial General Intelligence (AGI) safety focuses on addressing risks that could lead to significant harm to humanity. Their framework identifies four key risk areas:
+
+1. **Misuse**: Preventing malicious actors from accessing dangerous capabilities through:
+   - Proactive identification of dangerous capabilities
+   - Robust security measures and access restrictions
+   - Comprehensive monitoring systems
+   - Model safety mitigations
+
+2. **Misalignment**: Employing a two-tier defense strategy:
+   - **Model-level mitigations**: Amplified oversight and robust training for aligned models
+   - **System-level security**: Monitoring and access control to mitigate harm from potentially misaligned models
+
+3. **Mistakes**: Addressing errors in system deployment and operation
+
+4. **Structural Risks**: Considering broader societal implications
+
+This approach is complemented by techniques from interpretability, uncertainty estimation, and safer design patterns to enhance mitigation effectiveness.
+
 The relationship between these four aspects is crucial:
 - **Safety** ensures AI systems behave as intended
 - **Security** protects against malicious threats
@@ -132,6 +152,7 @@ Effective AI risk management requires addressing all these aspects throughout th
 | LIME | Explainability | Tool for explaining predictions of ML models | [GitHub](https://github.com/marcotcr/lime) |
 | SHAP | Explainability | Tool to explain outputs of any ML model | [GitHub](https://github.com/slundberg/shap) |
 | ML Privacy Meter | Privacy | Tool to quantify privacy risks in ML models | [GitHub](https://github.com/privacytrustlab/ml_privacy_meter) |
+| Privacy-Enhancing Technologies (PETs) | Privacy | Suite of technologies for operationalizing privacy in AI systems | See PET section below |
 | MLflow | ML Lifecycle | Platform for managing ML lifecycle | [GitHub](https://github.com/mlflow/mlflow) |
 | Model Cards Toolkit | Documentation | Tool for creating model cards | [GitHub](https://github.com/tensorflow/model-card-toolkit) |
 
@@ -157,6 +178,21 @@ Effective AI risk management requires addressing all these aspects throughout th
 | IBM Watson OpenScale | Fairness/Monitoring | AI bias detection and fairness monitoring | [IBM](https://www.ibm.com/products/watson-openscale) |
 | Microsoft Azure Responsible AI | Comprehensive | Suite of tools for responsible AI | [Microsoft](https://azure.microsoft.com/en-us/solutions/responsible-ai/) |
 | Google Cloud AI | Comprehensive | AI platform with responsible AI features | [Google](https://cloud.google.com/vertex-ai) |
+
+### Privacy-Enhancing Technologies for AI
+
+Privacy-Enhancing Technologies (PETs) provide critical mechanisms to protect privacy while enabling data use in AI systems. Key PETs applicable to AI include:
+
+| Technology | Description | Application in AI |
+|------------|-------------|------------------|
+| Synthetic Data | Artificially generated data that preserves statistical properties without exposing real personal information | Training data generation, testing AI systems |
+| Homomorphic Encryption | Enables computation on encrypted data without decryption | Secure cross-border data sharing, confidential model training |
+| Differential Privacy | Mathematical framework that adds noise to data or queries to protect individual privacy | Training data protection, privacy-preserving analytics |
+| Federated Learning | Trains AI models across multiple devices or servers without exchanging the underlying data | Distributed model training while keeping data local |
+| Trusted Execution Environments | Secure hardware-based isolated execution environments | Protecting sensitive computations and data processing |
+| Secure Multi-Party Computation | Allows multiple parties to jointly compute a function over inputs while keeping those inputs private | Collaborative AI model development across organizations |
+
+These technologies help operationalize privacy by design and default in AI systems, addressing both legal compliance requirements and ethical considerations while enabling beneficial data sharing and use.
 
 ### Assessment Templates and Frameworks
 
@@ -192,6 +228,32 @@ Effective AI risk management requires addressing all these aspects throughout th
 | Robust Intelligence | AI Security Platform | End-to-end platform for testing, monitoring, and securing AI systems against adversarial attacks, data drift, and model failures | [Robust Intelligence](https://www.robustintelligence.com/) |
 
 ## AI Risk Frameworks
+
+### IBM's Approach to AI Agent Risks and Mitigations
+
+IBM's AI Ethics Board has developed a framework for understanding opportunities, risks, and mitigations related to AI agents (software entities that use AI techniques and have agency to act on goals). Key aspects include:
+
+#### AI Agent Characteristics and Risk Factors
+- **Opaqueness**: Limited visibility into AI agent operations and interactions
+- **Open-endedness**: Flexibility in selecting resources/tools/other agents that may lead to unexpected actions
+- **Complexity**: Emerges as a consequence of open-endedness and compounds with scaling
+- **Non-reversibility**: Consequences of actions that impact the world may be difficult to reverse
+
+#### Benefits of AI Agents
+- Augmenting human intelligence
+- Automation of routine tasks
+- Improved efficiency and productivity
+- Enhanced decision-making and response quality
+
+#### Risk Mitigation Approaches
+- Sociotechnical methods including software tools
+- Risk assessment processes
+- AI ethics frameworks
+- Governance mechanisms
+- Multistakeholder consultations
+- Standards and regulation
+
+This framework acknowledges that AI agents, while providing significant benefits, require comprehensive risk management approaches that address both technical and societal considerations.
 
 | Framework | Organization | Description | Release Date |
 |-----------|--------------|-------------|--------------|
@@ -293,6 +355,7 @@ These guidelines represent point-in-time security recommendations in a rapidly e
 | Blueprint for an AI Bill of Rights | United States | Guidelines for protecting rights in AI systems | Released | October 2022 |
 | Algorithmic Accountability Act | United States | Proposed legislation for impact assessments | Proposed | - |
 | China's Generative AI Regulations | China | Regulations for generative AI models | Effective | August 2023 |
+| PCPD Guidelines for Employees on AI | Hong Kong | Guidelines for employees on responsible AI use in the workplace | Published | March 2025 |
 | Artificial Intelligence and Data Act (AIDA) | Canada | Proposed legislation for regulating AI | Proposed | - |
 | Algorithm Act | South Korea | Regulates algorithmic recommendation systems | Proposed | - |
 | AI Governance Framework | Singapore | Guidelines for responsible AI deployment | Released | 2019 |
