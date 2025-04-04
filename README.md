@@ -31,12 +31,37 @@ A comprehensive collection of resources, frameworks, standards, regulations, and
 - [Timeline of Standards and Regulations](#timeline-of-standards-and-regulations)
 - [AI Safety Conferences](CONFERENCES.md)
 - [Global AI Regulations and Legal Framework](AILAW.md)
+- [AI Ethics Volunteering Opportunities](VOLUNTEER.md)
 
 ## Understanding AI Safety, Security, Assurance and Governance
 
+### AI Ethics vs Responsible AI vs AI Safety
+
+It's important to understand that AI Ethics, Responsible AI, and AI Safety are distinct concepts with different focuses, origins, and approaches:
+
+#### AI Ethics
+- **Origins**: The oldest of the three, emerging from philosophy in the 1940s with Norbert Wiener's "computer ethics"
+- **Focus**: Reflective examination of what intelligent systems should do, how we define fairness, harm, or accountability
+- **Key Question**: What's right?
+- **Approach**: Academic, philosophical, focused on consequences and values
+
+#### Responsible AI
+- **Origins**: Newer concept that emerged around 2016, with Microsoft helping bring it into the mainstream
+- **Focus**: Operational implementation of ethics into governance structures
+- **Key Question**: How do we build ethical principles into systems?
+- **Approach**: Policy development, tooling, review boards, compliance frameworks, making ethics scalable
+
+#### AI Safety
+- **Origins**: Developed with growing concerns about powerful AI systems, associated with thinkers like Nick Bostrom and Stuart Russell
+- **Focus**: Control and alignment of AI systems to prevent unexpected or catastrophic outcomes
+- **Key Question**: How do we ensure AI doesn't go off the rails?
+- **Approach**: Technical safeguards, alignment research, existential risk mitigation, long-term oversight
+
+While these concepts overlap, they address different questions with different tools and goals. All three perspectives are necessary for a comprehensive approach to trustworthy AI.
+
 ### AI Safety vs AI Security
 
-While interconnected, AI Safety and AI Security focus on different aspects of AI system trustworthiness:
+Within the AI Safety domain, it's also important to distinguish between Safety and Security, as they focus on different aspects of AI system trustworthiness:
 
 #### AI Safety
 - **Primary Focus**: Preventing unintended harm from AI system behavior and outputs
@@ -812,6 +837,7 @@ timeline
 
 - [AI Safety Conferences](CONFERENCES.md) - A curated list of dedicated AI safety conferences and cybersecurity events with AI safety tracks
 - [Global AI Regulations and Legal Framework](AILAW.md) - A comprehensive map of AI regulations and legislation worldwide with focus on safety implications
+- [AI Ethics Volunteering Opportunities](VOLUNTEER.md) - A list of organizations where you can volunteer or participate in fellowships related to AI ethics and responsible AI
 - [Contributing Guidelines](CONTRIBUTING.md) - Information on how to contribute to this repository
 
 ## Contributing
