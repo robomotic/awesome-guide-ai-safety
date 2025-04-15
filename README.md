@@ -29,6 +29,11 @@ A comprehensive collection of resources, frameworks, standards, regulations, and
 - [Framework Relationships](#framework-relationships)
 - [Relationship to Other Regulations](#relationship-to-other-regulations)
 - [Timeline of Standards and Regulations](#timeline-of-standards-and-regulations)
+- [Essential Newsletters & Subscriptions](#essential-newsletters--subscriptions)
+- [Essential Ted Talks](#essential-ted-talks)
+- [Free AI Courses & Learning Resources](#free-ai-courses--learning-resources)
+- [AI Governance Courses & Training](#ai-governance-courses--training)
+- [Essential Books](#essential-books)
 - [AI Safety Conferences](CONFERENCES.md)
 - [Global AI Regulations and Legal Framework](AILAW.md)
 - [AI Ethics Volunteering Opportunities](VOLUNTEER.md)
@@ -610,24 +615,6 @@ graph TB
     end
 ```
 
-The diagram above illustrates how MITRE ATLAS and OWASP GenAI Top 10 security frameworks integrate with key governance standards (NIST AI RMF and ISO/IEC 42001) and regulations (EU AI Act). It highlights specific relationships between components:
-
-1. **Security Framework Components**:
-   - ATLAS tactics (Reconnaissance, ML Supply Chain, Model Evasion, Impact)
-   - OWASP Top 10 risks (Prompt Injection, Insecure Output, Training Data Poisoning, Model DoS)
-
-2. **Key Relationships**:
-   - ATLAS ML Supply Chain components align with OWASP Training Data Poisoning, both addressing data integrity
-   - ATLAS Model Evasion techniques complement OWASP Prompt Injection defenses
-   - Both frameworks support NIST AI RMF's Govern, Map, Measure, and Manage functions
-   - Security controls derived from both frameworks help satisfy ISO/IEC 42001 Risk Management requirements
-   - Compliance with EU AI Act high-risk and general-purpose AI provisions is enabled by implementing mitigations from both frameworks
-
-3. **Integration Benefits**:
-   - Comprehensive coverage: ATLAS focuses on adversarial ML while OWASP addresses LLM-specific vulnerabilities
-   - Complementary approaches: Technical security controls (ATLAS/OWASP) support governance requirements (ISO/NIST)
-   - Regulatory alignment: Security framework implementation facilitates compliance with EU AI Act requirements
-
 ## NIST Adversarial Machine Learning Taxonomy
 
 The National Institute of Standards and Technology (NIST) has published a comprehensive taxonomy and terminology framework for adversarial machine learning (AML) that complements the MITRE ATLAS framework. This publication (NIST AI 100-2) provides a structured approach to understanding and addressing security threats to AI systems.
@@ -832,6 +819,131 @@ timeline
         2025 : EU AI Act Initial Implementation Phase
         2027 : EU AI Act Full Implementation
 ```
+
+## Essential Newsletters & Subscriptions
+
+### Industry & General AI
+- [Axios AI+](https://www.axios.com/signup/ai-plus)
+- [IAPP Subscription](https://iapp.org/news/subscriptions)
+- [Fortune Eye on AI](https://fortune.com/newsletters/eye-on-ai)  
+- [The Neuron Daily](https://www.theneurondaily.com/)
+- [MIT Technology Review AI Demystified](https://forms.technologyreview.com/newsletters/ai-demystified-the-algorithm/)
+
+### AI Governance & Ethics
+- [One Useful Thing](https://www.oneusefulthing.org/)
+- [AI Mindset](https://www.ai-mindset.ai/ai-mindset-newsletter)
+- [AI with Allie](https://aiwithallie.beehiiv.com/)
+
+### AI Policy & Regulation
+- [CAIDP Update](https://www.caidp.org/caidp-update/)
+- [The Epoch Times](https://epochai.substack.com/)
+- [The Oliver Paper](https://oliverpatel.substack.com/)
+- [Ethos AI](https://www.ethos-ai.org/)
+- [AI Policy Perspectives](https://www.aipolicyperspectives.com/)
+- [AI Security & Governance](https://www.linkedin.com/newsletters/7185088850434662401/)
+
+### AI News & Podcasts
+- [AI Daily Brief](https://podcasts.apple.com/us/podcast/the-ai-daily-brief-formerly-the-ai-breakdown/id1680633614)
+- [Waking Up With AI](https://podcasts.apple.com/us/podcast/waking-up-with-ai/id1734234418)
+
+## Essential Ted Talks
+
+### Understanding AI
+- [What is an AI anyway?](https://www.ted.com/talks/mustafa_suleyman_what_is_an_ai_anyway)
+- [Why AI is incredibly smart and shockingly stupid](https://www.ted.com/talks/yejin_choi_why_ai_is_incredibly_smart_and_shockingly_stupid)
+- [AI isn't as smart as you think but it could be](https://www.ted.com/talks/jeff_dean_ai_isn_t_as_smart_as_you_think_but_it_could_be)
+- [The exciting perilous journey toward AGI](https://www.ted.com/talks/ilya_sutskever_the_exciting_perilous_journey_toward_agi)
+- [Is AI progress stuck?](https://www.ted.com/talks/jennifer_golbeck_is_ai_progress_stuck)
+- [AI won't plateau if we give it time to think](https://www.ted.com/talks/noam_brown_ai_won_t_plateau_if_we_give_it_time_to_think)
+- [The last 6 decades of AI and what comes next](https://www.ted.com/talks/ray_kurzweil_the_last_6_decades_of_ai_and_what_comes_next)
+
+### AI Safety & Risks
+- [Can we build AI without losing control over it?](https://www.ted.com/talks/sam_harris_can_we_build_ai_without_losing_control_over_it)
+- [The urgent risks of runaway AI and what to do about them](https://www.ted.com/talks/gary_marcus_the_urgent_risks_of_runaway_ai_and_what_to_do_about_them)
+- [AI is dangerous but not for the reasons you think](https://www.ted.com/talks/sasha_luccioni_ai_is_dangerous_but_not_for_the_reasons_you_think)
+- [Your right to repair AI systems](https://www.ted.com/talks/rumman_chowdhury_your_right_to_repair_ai_systems)
+- [3 principles for creating safer AI](https://www.ted.com/talks/stuart_russell_3_principles_for_creating_safer_ai)
+- [How to keep AI under control](https://www.ted.com/talks/max_tegmark_how_to_keep_ai_under_control)
+- [How to govern AI even if it's hard to predict](https://www.ted.com/talks/helen_toner_how_to_govern_ai_even_if_it_s_hard_to_predict)
+- [A musical approach to AI regulation](https://www.ted.com/talks/emilia_gomez_a_musical_approach_to_ai_regulation)
+
+### AI Opportunities & Impact
+- [How AI could empower any business](https://www.ted.com/talks/andrew_ng_how_ai_could_empower_any_business)
+- [AI's productivity paradox and what it means for you](https://www.ted.com/talks/ethan_mollick_ai_s_productivity_paradox_and_what_it_means_for_you)
+- [How AI could save (not destroy) education](https://www.ted.com/talks/sal_khan_how_ai_could_save_not_destroy_education)
+- [How to get empowered not overpowered by AI](https://www.ted.com/talks/max_tegmark_how_to_get_empowered_not_overpowered_by_ai)
+- [The evolution of AI and how it will impact human creativity](https://www.ted.com/talks/reid_hoffman_and_kevin_scott_the_evolution_of_ai_and_how_it_will_impact_human_creativity)
+- [How AI is saving billions of years of human research time](https://www.ted.com/talks/max_jaderberg_how_ai_is_saving_billions_of_years_of_human_research_time)
+- [How AI will answer questions we haven't thought to ask](https://www.ted.com/talks/aravind_srinivas_how_ai_will_answer_questions_we_haven_t_thought_to_ask)
+
+## Free AI Courses & Learning Resources
+
+### Elements of AI Series (University of Helsinki)
+- [Elements of AI](https://www.elementsofai.com/)
+- [Building AI](https://buildingai.elementsofai.com/)
+- [Ethics of AI](https://ethics-of-ai.mooc.fi/)
+
+### Google AI Learning Path
+- [AI Essentials](https://www.coursera.org/google-learn/ai-essentials)
+- [Introduction to Generative AI](https://www.coursera.org/specializations/introduction-to-generative-ai)
+- [Prompt Engineering](https://www.youtube.com/playlist?list=PLw9kjlF6lD5UqaZvMTbhJB8sV-yuXu5eW)
+
+### Microsoft AI Fundamentals
+- [Get started with artificial intelligence](https://learn.microsoft.com/en-us/training/modules/get-started-ai-fundamentals/)
+- [Machine Learning Fundamentals](https://learn.microsoft.com/en-us/training/modules/fundamentals-machine-learning/)
+- [Responsible AI Studio](https://learn.microsoft.com/en-us/training/modules/responsible-ai-studio/)
+- [Responsible AI Principles & Practices](https://learn.microsoft.com/en-us/training/modules/embrace-responsible-ai-principles-practices/)
+
+### DeepLearning.AI Courses
+- [AI For Everyone](https://www.coursera.org/learn/ai-for-everyone/)
+- [Generative AI for Everyone](https://www.coursera.org/learn/generative-ai-for-everyone/)
+
+## AI Governance Courses & Training
+
+- [AI Ethics & Governance Series](https://www.youtube.com/playlist?list=PLRKtJ4IpxJpDxl0NTvNYQWKCYzHNuy2xG)
+- [Ethics and Governance in the Age of Generative AI](https://www.coursera.org/learn/ethics-and-governance-in-the-age-of-generative-ai)
+- [AI Strategy & Governance](https://www.coursera.org/learn/wharton-ai-strategy-governance)
+- [Generative AI Governance, Policy and Emerging Regulation](https://www.coursera.org/learn/generative-ai-governance-policy-and-emerging-regulation)
+
+### LinkedIn Learning Courses
+- [Foundations of Responsible AI](https://www.linkedin.com/learning/foundations-of-responsible-ai/understanding-responsible-ai)
+- [Building a Responsible AI Program](https://www.linkedin.com/learning/building-a-responsible-ai-program-context-culture-content-and-commitment/actionable-steps-to-responsible-ai)
+- [Understanding and Implementing the NIST AI Risk Management Framework](https://www.linkedin.com/learning/understanding-and-implementing-the-nist-ai-risk-management-framework-rmf/implement-the-nist-risk-managment-framework)
+- [Navigating the EU AI Act](https://www.linkedin.com/learning/navigating-the-eu-ai-act/get-started-with-the-eu-ai-act)
+- [Introduction to Auditing AI Systems](https://www.linkedin.com/learning/introduction-to-auditing-ai-systems/sources-of-bias-in-data)
+- [Algorithmic Auditing and Continuous Monitoring](https://www.linkedin.com/learning/algorithmic-auditing-and-continuous-monitoring/algorithmic-auditing-and-continuous-monitoring-uses)
+
+## Essential Books
+
+### Understanding AI
+- [Artificial Intelligence: A Guide for Thinking Humans](https://www.amazon.com/Artificial-Intelligence-Guide-Thinking-Humans/dp/0374257833)
+- [Prediction Machines](https://www.amazon.com/Prediction-Machines-Updated-Expanded-Intelligence/dp/1647824672)
+- [A Citizen's Guide to Artificial Intelligence](https://www.amazon.com/Citizens-Guide-Artificial-Intelligence/dp/0262044811/)
+
+### AI Ethics & Impact
+- [Weapons of Math Destruction](https://www.amazon.com/Weapons-Math-Destruction-Increases-Inequality/dp/0553418831/)
+- [Artificial Unintelligence](https://www.amazon.com/Artificial-Unintelligence-Computers-Misunderstand-World/dp/026253701X/)
+- [Atlas of AI](https://www.amazon.com/Atlas-AI-Planetary-Artificial-Intelligence/dp/0300264631/)
+- [Snake Oil](https://www.amazon.com/Snake-Oil-Artificial-Intelligence-Difference/dp/B0D8C1KNB6/)
+- [Rebooting AI](https://www.amazon.com/Rebooting-AI-Building-Artificial-Intelligence-ebook/dp/B07MYLGQLB/)
+- [Unmasking AI](https://www.amazon.com/Unmasking-AI-Mission-Protect-Machines/dp/0593241835/)
+- [Feeding the Machine](https://www.amazon.com/Feeding-Machine-Hidden-Powering-I/dp/B0D9YT5272/)
+
+### AI Business & Innovation
+- [Co-Intelligence](https://www.amazon.com/Co-Intelligence-Living-Working-Ethan-Mollick/dp/059371671X/)
+- [Mastering AI](https://www.amazon.com/Mastering-AI-Survival-Superpowered-Future/dp/B0CYJKCFLH/)
+- [The Coming Wave](https://www.amazon.com/Coming-Wave-Power-Our-Future/dp/0593593979/)
+- [The AI-First Company](https://www.amazon.com/AI-First-Company-Compete-Artificial-Intelligence/dp/0593330315/)
+- [Competing in the Age of AI](https://www.amazon.com/Competing-Age-AI-Leadership-Algorithms/dp/1633697622/)
+- [The Algorithmic Leader](https://www.amazon.com/Algorithmic-Leader-Smart-Machines-Smarter/dp/1989025331/)
+- [The Singularity Is Nearer](https://www.amazon.com/The-Singularity-Is-Nearer/dp/B08ZJRMWVS/)
+
+### AI Safety & Governance
+- [The Alignment Problem](https://www.amazon.com/Alignment-Problem-Machine-Learning-Values/dp/0393868338/)
+- [Guardrails](https://www.amazon.com/Guardrails-Guiding-Human-Decisions-Age/dp/B0CR4DP8RY/)
+- [AI Needs You](https://www.amazon.com/AI-Needs-You-Change-Future/dp/B0CW27C8TG/)
+- [AI in the Mirror](https://www.amazon.com/AI-Mirror-Reclaim-Humanity-Thinking/dp/B0D51TZDRT/)
+- [Human Rights, Robot Wrongs](https://www.amazon.com/Human-Rights-Robot-Wrongs-Being/dp/B0D96HKP18/)
 
 ## Related Resources
 
