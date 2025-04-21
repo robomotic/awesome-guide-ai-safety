@@ -172,6 +172,8 @@ Effective AI risk management requires addressing all these aspects throughout th
 
 ## AI Safety Tools
 
+See the detailed [AI Safety Tools and OWASP LLM Top 10 Mapping](TOOLS.md) for a comprehensive comparison of open source, commercial, and security tools, including their coverage of the OWASP Top 10 for LLM Applications.
+
 ### Open Source Tools
 
 | Tool | Category | Description | Link |
