@@ -25,6 +25,7 @@ A comprehensive collection of resources, frameworks, standards, regulations, and
 - [MITRE ATLAS Framework](#mitre-atlas-framework)
 - [NIST Adversarial Machine Learning Taxonomy](#nist-adversarial-machine-learning-taxonomy)
 - [AI Incident Sources](#ai-incident-sources)
+- [AI Incidents Report](#ai-incidents-report)
 - [National CERTs and Organizations Addressing AI Security](#national-certs-and-organizations-addressing-ai-security)
 - [Framework Relationships](#framework-relationships)
 - [Relationship to Other Regulations](#relationship-to-other-regulations)
@@ -691,6 +692,14 @@ This taxonomy serves as an essential resource for organizations seeking to imple
 | AI Alignment Map | AI Alignment | Mapping AI alignment research and incidents | [Alignment Map](https://www.alignmentmap.org/) |
 | AI Safety Gridworlds | DeepMind | Testing environments for AI safety | [GitHub](https://github.com/deepmind/ai-safety-gridworlds) |
 | AI Testing Toolkit | Anthropic | Tools for testing AI safety | [Anthropic](https://www.anthropic.com/research) |
+
+## AI Incidents Report
+
+In this publication, we define a set of standardized key components of AI incidents that can be used as a reporting template to collect vital AI incident data. These components include, but are not limited to, information about the type of AI incident, the nature and severity of harm, technical data, affected entities and individuals, and the context and circumstances within which the incident unfolded.
+
+While intentionally high level, our proposed set of components distills information from existing AI initiatives that track real-world events, harms, and risks related to AI, and incorporates lessons learned from incident reporting systems and practices in the transportation, healthcare, and cybersecurity sectors.
+
+For more details, see the full report: [AI incidents.pdf](documents/AI%20%20incidents.pdf)
 
 ## National CERTs and Organizations Addressing AI Security
 
