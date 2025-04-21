@@ -34,6 +34,8 @@ A comprehensive collection of resources, frameworks, standards, regulations, and
 - [Free AI Courses & Learning Resources](#free-ai-courses--learning-resources)
 - [AI Governance Courses & Training](#ai-governance-courses--training)
 - [Essential Books](#essential-books)
+- [AI Governance Profession Report 2025](#ai-governance-profession-report-2025)
+- [AI Agent Governance: A Field Guide](#ai-agent-governance-a-field-guide)
 - [AI Safety Conferences](CONFERENCES.md)
 - [Global AI Regulations and Legal Framework](AILAW.md)
 - [AI Ethics Volunteering Opportunities](VOLUNTEER.md)
@@ -299,6 +301,20 @@ This framework acknowledges that AI agents, while providing significant benefits
 | AI Principles | Google | Principles and practices for responsible AI | 2018 |
 | AI Ethics Framework | Singapore PDPC | Guidelines for ethical use of AI | 2020 |
 | AI Fairness 360 | IBM | Toolkit and framework for fairness in AI | 2018 |
+
+- **MIT AI Risk Repository (April 2025 Update):**
+  - The MIT AI Risk Repository is a comprehensive, regularly updated database of AI risks, frameworks, and taxonomies, supporting research, standards, and risk management.
+  - The April 2025 update added 9 new frameworks, ~600 new risks, and a new subdomain on multi-agent risks. Notable additions include:
+    - International Scientific Report on the Safety of Advanced AI
+    - Collaborative taxonomy of AI, algorithmic, and automation harms
+    - Multi-Agent Risks from Advanced AI
+    - Taxonomy of systemic risks from general-purpose AI
+    - AI Risk Atlas
+    - Generative AI misuse taxonomy
+    - Risk sources and management for general-purpose AI
+    - AI Hazard Management framework
+    - AILUMINATE AI Risk and Reliability Benchmark
+  - Access the repository at [airisk.mit.edu](https://airisk.mit.edu) or see the local summary: [April 2025 update of the AI Risk Repository.pdf](documents/April%202025%20update%20of%20the%20AI%20Risk%20Repository.pdf)
 
 ## SANS Institute Critical AI Security Guidelines
 
@@ -946,6 +962,33 @@ timeline
 - [AI Needs You](https://www.amazon.com/AI-Needs-You-Change-Future/dp/B0CW27C8TG/)
 - [AI in the Mirror](https://www.amazon.com/AI-Mirror-Reclaim-Humanity-Thinking/dp/B0D51TZDRT/)
 - [Human Rights, Robot Wrongs](https://www.amazon.com/Human-Rights-Robot-Wrongs-Being/dp/B0D96HKP18/)
+
+## AI Governance Profession Report 2025
+
+The [AI Governance Profession Report 2025](documents/AI%20governance%20profession%20report%202025.pdf) is the most up-to-date global overview of AI governance work, providing essential data and benchmarks for the field. Key insights from the report and the [LinkedIn summary by Jakub Szarmach](https://www.linkedin.com/posts/jakubszarmach_ai-governance-profession-report-2025-activity-7318541033355526145-BnT3) include:
+
+- **77%** of organizations are actively working on AI governance, a significant increase from last year.
+- **30%** of organizations not yet using AI are still prioritizing governance, showing risk-forward thinking.
+- Only **1.5%** of organizations say they don’t need more AI governance staff—demand for talent is high.
+- **64%** report their current AI governance budget is insufficient.
+
+The profession is maturing, with teams scaling and AI governance being embedded in privacy, compliance, IT, and executive functions. However, challenges remain, such as skills gaps, tool shortages, and complex organizational structures.
+
+For more details, see the full report: [AI governance profession report 2025.pdf](documents/AI%20governance%20profession%20report%202025.pdf)
+
+## AI Agent Governance: A Field Guide
+
+The [AI Agent Governance: A Field Guide](documents/AI%20agent%20governance%20IAPS.pdf) is an accessible introduction to the emerging field of AI agent governance, produced by the Institute for AI Policy and Strategy (IAPS). As highlighted in [Jam Kraprayoon's LinkedIn post](https://www.linkedin.com/posts/jam-kraprayoon-2ab7a2159_ai-agent-governance-a-field-guide-activity-7318702549774016514-1weO), the report covers:
+
+- The growing importance of AI agents for tech companies, startups, and investors, with the potential for millions or billions of agents performing complex tasks autonomously.
+- Both the transformative benefits and novel risks of deploying agents at scale.
+- Vivid scenarios of a future with widespread AI agents.
+- Analysis of current agent capabilities, benchmarks, and rapid improvements.
+- A mapping of major open questions in agent governance and a framework for interventions.
+
+The field is still in its early stages, with only a few organizations actively addressing these challenges. The guide serves as a call to action for researchers, technologists, and policymakers to help advance this critical area.
+
+For more details, see the full report: [AI agent governance IAPS.pdf](documents/AI%20agent%20governance%20IAPS.pdf)
 
 ## Related Resources
 
