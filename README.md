@@ -729,11 +729,44 @@ graph TB
     ISO27001 -->|Security foundation for| ISO42001
     ISO27701 -->|Privacy extension to| ISO27001
     NISTRMF -->|Influenced| USEO
-    EUAI -->|Compatible with| ISO42001
-    GDPR -->|Privacy requirements for| EUAI
-    MITRISK -->|Informs| NISTRMF
-    OECD -->|Principles adopted in| EUAI
-    BILLRIGHTS -->|Informed by| NISTRMF
+    EUAI -->|Builds on| GDPR
+    EUAI -->|References| ISO27001
+    USEO -->|Complements| CCPA
+    USEO -->|Builds on| NIST800
+    
+    GDPR -->|Data protection for| AI
+    CCPA -->|US consumer data rights affecting| AI
+    
+    ISO27001 -->|Establishes| SECURITY
+    NIST800 -->|Details| SECURITY
+    EUAI -->|Requires| SECURITY
+    
+    subgraph "Overlap Areas"
+        DATAMINIMIZATION[Data Minimization]
+        PRIVACY[Privacy by Design]
+        IMPACT[Impact Assessments]
+        TRANSPARENCY[Transparency]
+        SECURITY[Security Measures]
+    end
+    
+    GDPR -->|Requires| DATAMINIMIZATION
+    EUAI -->|Mandates| DATAMINIMIZATION
+    
+    GDPR -->|Enforces| PRIVACY
+    CCPA -->|Promotes| PRIVACY
+    ISO42001 -->|Recommends| PRIVACY
+    
+    GDPR -->|Requires| IMPACT
+    EUAI -->|Requires| IMPACT
+    NISTRMF -->|Recommends| IMPACT
+    
+    GDPR -->|Focuses on| TRANSPARENCY
+    EUAI -->|Mandates| TRANSPARENCY
+    USEO -->|Promotes| TRANSPARENCY
+    
+    ISO27001 -->|Establishes| SECURITY
+    NIST800 -->|Details| SECURITY
+    EUAI -->|Requires| SECURITY
 ```
 
 ## Relationship to Other Regulations
@@ -764,8 +797,9 @@ graph TD
     GDPR -->|Data protection for| AI
     CCPA -->|US consumer data rights affecting| AI
     
-    ISO27001 -->|Security foundation for| ISO42001
-    NIST800 -->|Security controls referenced by| NISTRMF
+    ISO27001 -->|Establishes| SECURITY
+    NIST800 -->|Details| SECURITY
+    EUAI -->|Requires| SECURITY
     
     subgraph "Overlap Areas"
         DATAMINIMIZATION[Data Minimization]
@@ -981,7 +1015,7 @@ The [Multi-Agent Threat Modelling Guide](documents/multi%20agent%20threat%20mode
 
 - **Extending the Threat Taxonomy**: The guide expands beyond OWASP’s original Agentic AI threats, adding real-world MAS risks such as cross-agent interference, plugin compromise, memory poisoning, and coordination failure.
 
-- **Deep Diving into Use Cases**: Practical examples are modeled, including:
+- **Deep Diving into Use Cases- **Deep Diving into Use Cases**: Practical examples are modeled, including:
   - A reimbursement RPA agent attacked via weak input validation
   - Eliza OS coordination failures leading to privilege escalation
   - Anthropic’s MCP Protocol vulnerabilities in agentic plugin environments
