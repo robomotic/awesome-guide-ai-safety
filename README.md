@@ -996,7 +996,7 @@ For details and methodology, see: [multi agent threat modelling.pdf](documents/m
 
 ## Mapping Frameworks at the Intersection of AI Safety and Traditional Risk Management
 
-Our evidence scan, as detailed in [Mapping Frameworks at the Intersection of AI Safety and Traditional Risk Management](documents/mapping%20frameworks%20traditional%20risk.pdf), identified 11 AI risk management frameworks that bridge traditional risk management and AI safety. Key insights include:
+Our evidence scan, as detailed in [Mapping Frameworks at the Intersection of AI Safety and Traditional Risk Management](documents/mapping%20frameworks%20traditional%20risk.pdf), identified 11 AI risk managementframeworks that bridge traditional risk management and AI safety. Key insights include:
 
 - **Recency and Diversity**: All frameworks were published in 2023 or later, spanning preprints, reports, government guidance, research, and conference papers.
 - **Global Authorship**: Primary authors represent the UK, Singapore, Germany, Finland, USA, and France.
