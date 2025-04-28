@@ -551,22 +551,24 @@ graph TB
     ATLAS_IMPACT[Impact]:::security
     
     %% OWASP components
-    OWASP_PROMPT[LLM01: Prompt Injection]:::security
-    OWASP_OUTPUT[LLM02: Insecure Output]:::security
-    OWASP_POISON[LLM03: Training Data Poisoning]:::security
-    OWASP_DOS[LLM04: Model DoS]:::security
+    OWASP --> OWASP_PROMPT[LLM01: Prompt Injection]:::security
+    OWASP --> OWASP_OUTPUT[LLM02: Insecure Output]:::security
+    OWASP --> OWASP_POISON[LLM03: Training Data Poisoning]:::security
+    OWASP --> OWASP_DOS[LLM04: Model DoS]:::security
     
-    %% Framework components
-    NIST_GOV[Govern]:::governance
-    NIST_MAP[Map]:::governance
-    NIST_MEASURE[Measure]:::governance
-    NIST_MANAGE[Manage]:::governance
+    %% NIST breakdown
+    NIST --> NIST_GOV[Govern]:::governance
+    NIST --> NIST_MAP[Map]:::governance
+    NIST --> NIST_MEASURE[Measure]:::governance
+    NIST --> NIST_MANAGE[Manage]:::governance
     
-    ISO_RISK[Risk Management]:::governance
-    ISO_LIFECYCLE[AI Lifecycle]:::governance
+    %% ISO breakdown
+    ISO42001 --> ISO_RISK[Risk Management]:::governance
+    ISO42001 --> ISO_LIFECYCLE[AI Lifecycle]:::governance
     
-    EU_HIGHRISK[High-Risk Requirements]:::regulation
-    EU_GENPURPOSE[General Purpose AI]:::regulation
+    %% EU AI Act breakdown
+    EUAI --> EU_HIGHRISK[High-Risk Requirements]:::regulation
+    EUAI --> EU_GENPURPOSE[General Purpose AI]:::regulation
     
     %% Main relationships
     ATLAS --> NIST
@@ -576,33 +578,6 @@ graph TB
     ATLAS --> EUAI
     OWASP --> EUAI
     
-    %% ATLAS breakdown
-    ATLAS --> ATLAS_RECON
-    ATLAS --> ATLAS_SUPPLY
-    ATLAS --> ATLAS_EVASION
-    ATLAS --> ATLAS_IMPACT
-    
-    %% OWASP breakdown
-    OWASP --> OWASP_PROMPT
-    OWASP --> OWASP_OUTPUT
-    OWASP --> OWASP_POISON
-    OWASP --> OWASP_DOS
-    
-    %% NIST breakdown
-    NIST --> NIST_GOV
-    NIST --> NIST_MAP
-    NIST --> NIST_MEASURE
-    NIST --> NIST_MANAGE
-    
-    %% ISO breakdown
-    ISO42001 --> ISO_RISK
-    ISO42001 --> ISO_LIFECYCLE
-    
-    %% EU AI Act breakdown
-    EUAI --> EU_HIGHRISK
-    EUAI --> EU_GENPURPOSE
-    
-    %% Cross-framework relationships
     ATLAS_SUPPLY -.->|Aligns with| OWASP_POISON
     ATLAS_IMPACT -.->|Relates to| OWASP_DOS
     ATLAS_EVASION -.->|Complements| OWASP_PROMPT
@@ -654,7 +629,7 @@ The National Institute of Standards and Technology (NIST) has published a compre
 | Availability Violations | NISTAML.01 | Attacks that degrade model performance or cause denial of service | Model poisoning, data poisoning, energy-latency attacks |
 | Integrity Violations | NISTAML.02 | Attacks that cause incorrect model behavior or outputs | Evasion attacks, backdoor poisoning, targeted poisoning |
 | Privacy Compromises | NISTAML.03 | Attacks that extract sensitive information | Model extraction, reconstruction, membership inference |
-| Supply Chain Attacks | NISTAML.05 | Attacks targeting the AI development pipeline | Model poisoning during development or distribution |
+| Supply Chain Attacks | NISTAML.05 | Attacks targeting the AI development pipeline | Data Poisoning during development or distribution |
 
 ### Generative AI Attack Categories
 
@@ -688,10 +663,9 @@ This taxonomy serves as an essential resource for organizations seeking to imple
 | AI Vulnerabilities Database | AVID | Database of ML vulnerabilities | [AVID](https://avidml.org/) |
 | Responsible AI Tracker | Montreal AI Ethics Institute | Tracking AI ethics incidents and developments | [MAIEI](https://montrealethics.ai/) |
 | AI Ethics Incidents | ParthLabs | Collection of AI ethics incidents | [ParthLabs](https://parthlabs.github.io/ai_ethics_incidents/) |
-| Algorithm Watch | Algorithm Watch | Monitoring AI systems and their impacts | [Algorithm Watch](https://algorithmwatch.org/) |
-| AI Alignment Map | AI Alignment | Mapping AI alignment research and incidents | [Alignment Map](https://www.alignmentmap.org/) |
-| AI Safety Gridworlds | DeepMind | Testing environments for AI safety | [GitHub](https://github.com/deepmind/ai-safety-gridworlds) |
-| AI Testing Toolkit | Anthropic | Tools for testing AI safety | [Anthropic](https://www.anthropic.com/research) |
+| Algorithmic Impact Assessment Tool | Government of Canada | A questionnaire designed to help assess and mitigate the impacts associated with deploying an automated decision system | [Government of Canada](https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/algorithmic-impact-assessment.html) |
+| Generative AI Vendor Evaluation Tool | FSISAC | A tool designed to help organizations assess and select generative AI vendors while managing associated risks | [FSISAC](https://www.fsisac.com/hubfs/Knowledge/AI/FSISAC_GenerativeAI-VendorEvaluation&QualitativeRiskAssessment.pdf) |
+| AI Management Essentials Tool (AIME) | UK Department for Science, Innovation and Technology (DSIT) | A self-assessment questionnaire to help organizations assess and improve their AI governance and management processes, aligned with ISO/IEC 42001, NIST AI RMF, and EU AI Act | [AIME Tool](documents/The%20AIME%20tool.pdf) |
 
 ## AI Incidents Report
 
@@ -999,10 +973,31 @@ The field is still in its early stages, with only a few organizations actively a
 
 For more details, see the full report: [AI agent governance IAPS.pdf](documents/AI%20agent%20governance%20IAPS.pdf)
 
+## Multi-Agentic System Threat Modelling Guide (MAESTRO)
+
+The [Multi-Agent Threat Modelling Guide](documents/multi%20agent%20threat%20modelling.pdf) introduces the MAESTRO framework—a layered, architectural approach for analyzing risks in multi-agent systems (MAS):
+
+- **Applying the MAESTRO Framework**: MAESTRO models risks across seven architectural layers, showing how threats can cascade between perception, decision, action, coordination, and control. This layered view helps identify how vulnerabilities in one agent or layer can propagate and amplify across a system.
+
+- **Extending the Threat Taxonomy**: The guide expands beyond OWASP’s original Agentic AI threats, adding real-world MAS risks such as cross-agent interference, plugin compromise, memory poisoning, and coordination failure.
+
+- **Deep Diving into Use Cases**: Practical examples are modeled, including:
+  - A reimbursement RPA agent attacked via weak input validation
+  - Eliza OS coordination failures leading to privilege escalation
+  - Anthropic’s MCP Protocol vulnerabilities in agentic plugin environments
+
+- **Emphasizing Agentic Factors**: The guide explains how agent autonomy, non-determinism, memory drift, and decentralized agent identity create risk amplification loops that are nearly invisible to traditional threat modeling.
+
+- **Delivering Actionable Guidance**: MAESTRO is not just a checklist—it’s a methodology. It helps structure agent security reviews from architecture to deployment, enabling teams to catch vulnerabilities before they chain into systemic failures.
+
+🌍 This work complements the OWASP Agentic Security Initiative (ASI) and integrates smoothly with frameworks like the OWASP Top 10 for LLM Applications.
+
+For details and methodology, see: [multi agent threat modelling.pdf](documents/multi%20agent%20threat%20modelling.pdf)
+
 ## Related Resources
 
 - [AI Safety Conferences](CONFERENCES.md) - A curated list of dedicated AI safety conferences and cybersecurity events with AI safety tracks
-- [Global AI Regulations and Legal Framework](AILAW.md) - A comprehensive map of AI regulations and legislation worldwide with focus on safety implications
+- [Global AI Regulations and Legal Framework](AILAW.md) - A comprehensive map of AIregulations and legislation worldwide with focus on safety implications
 - [AI Ethics Volunteering Opportunities](VOLUNTEER.md) - A list of organizations where you can volunteer or participate in fellowships related to AI ethics and responsible AI
 - [Contributing Guidelines](CONTRIBUTING.md) - Information on how to contribute to this repository
 
