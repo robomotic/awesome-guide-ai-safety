@@ -43,7 +43,7 @@ A comprehensive collection of resources, frameworks, standards, regulations, and
 
 ## Understanding AI Safety, Security, Assurance and Governance
 
-### AI Ethics vs Responsible AI vs AI Safety
+### AI
 
 It's important to understand that AI Ethics, Responsible AI, and AI Safety are distinct concepts with different focuses, origins, and approaches:
 
@@ -994,12 +994,17 @@ The [Multi-Agent Threat Modelling Guide](documents/multi%20agent%20threat%20mode
 
 For details and methodology, see: [multi agent threat modelling.pdf](documents/multi%20agent%20threat%20modelling.pdf)
 
-## Related Resources
+## Mapping Frameworks at the Intersection of AI Safety and Traditional Risk Management
 
-- [AI Safety Conferences](CONFERENCES.md) - A curated list of dedicated AI safety conferences and cybersecurity events with AI safety tracks
-- [Global AI Regulations and Legal Framework](AILAW.md) - A comprehensive map of AIregulations and legislation worldwide with focus on safety implications
-- [AI Ethics Volunteering Opportunities](VOLUNTEER.md) - A list of organizations where you can volunteer or participate in fellowships related to AI ethics and responsible AI
-- [Contributing Guidelines](CONTRIBUTING.md) - Information on how to contribute to this repository
+Our evidence scan, as detailed in [Mapping Frameworks at the Intersection of AI Safety and Traditional Risk Management](documents/mapping%20frameworks%20traditional%20risk.pdf), identified 11 AI risk management frameworks that bridge traditional risk management and AI safety. Key insights include:
+
+- **Recency and Diversity**: All frameworks were published in 2023 or later, spanning preprints, reports, government guidance, research, and conference papers.
+- **Global Authorship**: Primary authors represent the UK, Singapore, Germany, Finland, USA, and France.
+- **Terminology**: The frameworks use terms such as “frontier AI”, “general-purpose AI”, “advanced AI”, “high-risk AI”, and “Artificial General Intelligence”.
+
+These frameworks reflect the rapid evolution and internationalization of AI risk management, highlighting the convergence of established risk practices with emerging AI safety needs.
+
+For the full analysis and framework list, see: [mapping frameworks traditional risk.pdf](documents/mapping%20frameworks%20traditional%20risk.pdf)
 
 ## Contributing
 
