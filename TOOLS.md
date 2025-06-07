@@ -182,7 +182,7 @@ The OWASP Top 10 for Large Language Model Applications highlights the most criti
             - CLI for continuous security testing and integration into MLOps pipelines.
 
 -   **PyRIT (Microsoft):**
-    -   GitHub: [https://github.com/microsoft/pyrit](https://github.com/microsoft/pyrit)
+    -   GitHub: [https://github.com/Azure/PyRIT](https://github.com/Azure/PyRIT)
     -   Open-source red teaming tool for LLMs.
     -   **OWASP Coverage:**
         - Prompt Injection: ✔️ (dynamic attack generation)
